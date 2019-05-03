@@ -8,6 +8,7 @@
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "watchProd": "webpack --mode production --watch",
+    "rollup": "rollup -c",
     "stats": "webpack --profile --json > stats.json",
     "analyzer": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json ../assets --port 4200",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,11 +17,17 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^2.1.1",
-    "mini-css-extract-plugin": "^0.5.0",
+    "eslint": "^5.16.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
     "style-loader": "^0.23.1",
-    "svelte": "^3.0.0-beta.22",
+    "svelte": "^3.0.0",
     "svelte-loader": "^2.13.3",
-    "webpack": "^4.29.6",
+    "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   }
 }

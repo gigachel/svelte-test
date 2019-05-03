@@ -8,12 +8,19 @@
 <body>
   <script>
     var x = 10;
+    var y = 5;
   </script>
-  <!-- <Comp name="qwerty"></Comp> -->
   <my-component id="2424" class="rqwerrt" width="34" answer="66"></my-component>
   <my-app answer="99" ></my-app>
   <my-component answer="{ x*2 === 20 }"></my-component>
   <my-component answer="77"></my-component>  
-  <script src="assets/js/bundle.js"></script>
+  <my-component answer="77 + {x}"></my-component>
+  <my-component answer="brackets + {x}"></my-component>
+  <my-component answer="{x} + {y}"></my-component>  
+  <my-component answer="{ [{a:1}, {b:2}] }"></my-component>
+  <my-component answer="object: { JSON.stringify([{a:1}, {b:2}]) }"></my-component>
+
+  <!-- <script src="assets/js/bundle.js"></script> -->
+  <script src="assets/js/bundleR.js"></script>
 </body>
 </html>

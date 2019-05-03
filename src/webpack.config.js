@@ -19,7 +19,7 @@ module.exports = function(env, options) {
       filename: './js/bundle.js',
       chunkFilename: './js/[name].bundle.[chunkhash].js',
     },
-    // devtool: "source-map",
+    devtool: "source-map",
     module: {
       rules: [{
         test: /\.(html|svelte)$/,
